@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: #FAFAFA;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper header nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.wrapper header nav .logo a {
+  color: rgb(116, 114, 114);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.wrapper header nav ul {
+  display: flex;
+}
+.wrapper header nav ul a {
+  margin-left: 20px;
+  color: #9B4DCA;
+  text-decoration: none;
+}
+.wrapper header nav ul a:nth-child(1) {
+  font-weight: 800;
+}
+.wrapper .shortenContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.wrapper .shortenContainer .popUp {
+  position: absolute;
+  top: -10%;
+  background: green;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  transition: 1s;
+}
+.wrapper .shortenContainer .active {
+  top: 2rem;
+  transition: 1s;
+}
+.wrapper .shortenContainer .container {
+  width: 50%;
+}
+.wrapper .shortenContainer .container h1 {
+  font-size: 35px;
+  color: rgb(116, 114, 114);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+.wrapper .shortenContainer .container .inputContainer {
+  margin-top: 1rem;
+  display: flex;
+}
+.wrapper .shortenContainer .container .inputContainer input {
+  padding: 10px;
+  width: 70%;
+  font-size: 15px;
+  outline: 0;
+}
+.wrapper .shortenContainer .container .inputContainer .btn {
+  display: flex;
+  margin-left: 10px;
+}
+.wrapper .shortenContainer .container .inputContainer .btn button {
+  padding: 10px 20px;
+  border: 1px solid #9B4DCA;
+  background: transparent;
+  color: #9B4DCA;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.wrapper .shortenContainer .container .inputContainer .btn button:hover {
+  background: #9B4DCA;
+  transition: 0.5s;
+  color: white;
+}
+.wrapper .shortenContainer .container .shortenResult {
+  margin-top: 3rem;
+  display: none;
+}
+.wrapper .shortenContainer .container .shortenResult .shortenLinks {
+  width: 100%;
+  margin-left: 0.5rem;
+}
+.wrapper .shortenContainer .container .shortenResult .shortenLinks .shortenLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .shortenContainer .container .shortenResult .shortenLinks .shortenLink .shortlin {
+  font-size: 20px;
+  font-weight: bold;
+  color: #9B4DCA;
+}
+.wrapper .shortenContainer .container .shortenResult .shortenLinks .shortenLink .copy {
+  background: #DBE0EB;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.wrapper .shortenContainer .container .shortenResult .shortenLinks .shortenLink .copy:hover {
+  background: #9B4DCA;
+  color: white;
+  transition: 0.5s;
+}
+.wrapper .shortenContainer .container .shortenResult .shortenLinks .links {
+  margin-top: 1rem;
+}
+.wrapper .shortenContainer .container .shortenResult .shortenLinks .links p {
+  margin-top: 10px;
+}
+.wrapper .shortenContainer .container .shortenResult .shortenLinks .links .fullShotLink {
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #7c7c7c;
+  background: transparent;
+}
+.wrapper .shortenContainer .container .shortenResult .shortenLinks .links span {
+  font-size: 18px;
+  color: #7c7c7c;
+  font-weight: lighter;
+}
+
+@media (max-width: 900px) {
+  .wrapper .shortenContainer .container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper .shortenContainer .container {
+    width: 100%;
+  }
+  .wrapper .shortenContainer .container .shortenResult .qrCode {
+    display: none;
+  }
+  .wrapper .shortenContainer .container .shortenResult .shortenLinks {
+    margin-left: 0;
+  }
+}
+@media (max-width: 568px) {
+  .wrapper {
+    width: 90%;
+  }
+  .wrapper .shortenContainer .container {
+    width: 100%;
+  }
+  .wrapper .shortenContainer .container h1 {
+    font-size: 24px;
+  }
+  .wrapper .shortenContainer .container .inputContainer {
+    display: block;
+  }
+  .wrapper .shortenContainer .container .inputContainer input {
+    width: 90%;
+    font-size: 13px;
+  }
+  .wrapper .shortenContainer .container .inputContainer .btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@keyframes arrows {
+  0%, 100% {
+    color: black;
+    transform: translateY(0);
+  }
+  50% {
+    color: #3AB493;
+    transform: translateY(20px);
+  }
+}/*# sourceMappingURL=style.css.map */
